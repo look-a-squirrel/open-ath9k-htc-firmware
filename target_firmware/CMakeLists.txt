@@ -4,7 +4,7 @@ CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
 PROJECT(ath9k_firmware NONE)
 ENABLE_LANGUAGE(C)
 
-ADD_DEFINITIONS(-g -Os -Wunused-label -Wunused-variable -Wunused-value -Wpointer-arith -Wundef -nostdlib -Wundef)
+ADD_DEFINITIONS(-g -Os -Wunused-label -Wunused-variable -Wunused-value -Wpointer-arith -Wundef -nostdlib -Wundef -fno-aggressive-loop-optimizations)
 ADD_DEFINITIONS(
 	-D_RAM_
 	-DBIG_ENDIAN -D_BYTE_ORDER=_BIG_ENDIAN
